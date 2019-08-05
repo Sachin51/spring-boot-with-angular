@@ -1,0 +1,7 @@
+<h2>Login</h2>
+Username:<input type="text" name="username" [(ngModel)]="username">
+Password:<input type="password" name="password" [(ngModel)]="password">
+<button (click)=handleBasicAuthLogin(username,password) class="btn btn-success">Login</button>
+<br>
+<button (click)=handleJWTAuthLogin(username,password) class="btn btn-success">Login With JWT</button>
+

@@ -1,0 +1,24 @@
+<h2>Welcome {{userName}}!</h2>
+
+<div>
+  You can go to Todos by clicking here <a routerLink="/todos">Todos</a>
+</div>
+
+<div>
+  Get cusomized Hello World msg 
+  <button class="btn btn-success" (click)="getWelcomeMessage()">Get Hello Msg</button>
+</div>
+<br>
+<div>
+  Get cusomized Hello World msg 
+  <button class="btn btn-success" (click)="executeHelloWorldWithPathVariable('Dhoni')">Get Hello Msg With Path Variable</button>
+</div>
+<br>
+<div>
+  Get cusomized Hello World msg 
+  <button class="btn btn-success" (click)="getToDos('Sachin')">Get ToDos For User</button>
+</div>
+
+<div *ngIf="customMsg">
+  Hello {{customMsg}} macha....!
+</div>
